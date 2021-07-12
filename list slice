@@ -1,0 +1,31 @@
+# clearing list  duplicacy
+
+list_temp = [2, 4, 2, 5, 7, 9, 32, 4, 54, 32]
+clear_list = []
+for items in list_temp:
+	if items not in clear_list :
+		clear_list.append(items) 
+	
+# print (clear_list)
+
+
+# method-2 : filtering duplicate items in list
+
+
+temp = [2,3,5,3,2,5,7,8]
+custom_list = {i for i in list_temp}
+print (custom_list)
+
+# --------ends here----------------------
+
+
+
+# Finding items which are common or unique:
+
+
+a = [2,56,4,3413,43,24,22,63,542,245,25,42,34]
+
+b= ['s','s',2,54,63,22,43,25,2,42,23,4,243, 'jack', 'john']
+
+common_list = [i for i in b if i  in a]
+unique_list = [i for i in a if i not in b]
