@@ -1,0 +1,6 @@
+dup_cols = {}
+
+for i, c1 in enumerate(tqdm_notebook(data.columns)):
+    for c2 in data.columns[i + 1:]:
+        if c2 not in dup_cols and np.all(data[c1] == data[c2]):
+            dup_cols[c2] = c1
